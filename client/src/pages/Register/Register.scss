@@ -1,0 +1,50 @@
+@use "../../App.scss" as app;
+
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  flex-direction: column;
+   background-color:white;
+   margin-top: 100px;
+  > form {
+    width: 50%;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    > h1 {
+      font-family: app.$font-ubuntu;
+      margin-bottom: 1rem;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: 1rem;
+
+      > input {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-family: app.$font-assistant;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.308);
+        border-radius: 0.2rem;
+        margin: 0;
+      }
+
+      > button {
+        width: 100%;
+        padding: 0rem 2rem;
+        margin: 0;
+        &:hover {
+          background-color: app.$polic-blue;
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.search-form {
+  display: flex;
+  align-items: left;
+  padding: 1px;
+  position: relative;
+  margin-right: 10px;
+  justify-content: flex-start; /* Align items to the left */
+}
+
+.search-form input {
+  border: 1px solid #ccc; /* Add a border for a rectangular look */
+  border-radius: 4px; /* Add border-radius for rounded corners */
+  outline: none;
+  padding: 8px; /* Increase padding for better spacing */
+  font-size: 16px;
+  width: 400px; /* Adjust width as needed */
+  height: 36px;
+  transition: width 0.3s, border-color 0.3s; /* Add transition for smooth width change and border color change */
+}
+
+.search-form input::placeholder {
+  color: #999;
+}
+
+.search-form input:focus {
+  width: 500px; /* Increase width when focused */
+}
+
+.search-form button {
+  border: none; /* Remove border */
+  outline: none;
+  padding: 1px; /* Adjust padding for better spacing around the icon */
+  color: #0f0f0f; /* Change color to a darker shade for better visibility */
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 8px; /* Adjust margin for spacing between input and button */
+  height: 30px;
+  width: 30px; /* Adjust width to fit the icon and text */
+  position: absolute; /* Position the button absolutely inside the container */
+  margin-top: 20px;
+  margin-right: 2px; /* Align the button vertically at the center */
+  right: 4px; /* Align the button to the right side of the container */
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form button svg {
+  width: 30px; /* Adjust icon size */
+  height: 30px;
+  fill: rgb(23, 23, 23); /* Set icon color to white */
+}
+
+/* Add hover effect for button */
+.search-form button:hover {
+  background-color:transparent; /* Change background color on hover */
+}
+
+/* Add hover effect for icon */
+.search-form button:hover svg {
+  fill: rosybrown; /* Change icon color on hover */
+}
