@@ -7,9 +7,10 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "build": "npm start",
+    "build": "npm run build",
     "dev": "concurrently \"npm run start\" \"npm run client:start\""
-  },  
+  }
+,  
   "keywords": [],
   "author": "Chandrakant Tiwari",
   "license": "MIT",
