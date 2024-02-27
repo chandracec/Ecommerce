@@ -8,9 +8,9 @@ import {
   getOrdersController,
   getAllOrdersController,
   orderStatusController,
-} from "../controllers/authController.js";
-import { isAdmin, requireSignIn } from "../middlewares/authMiddleware.js";
-import {emailVerificationHandler} from "../helpers/emailHelper.js"
+} from "../../controllers/authController.js";
+import { isAdmin, requireSignIn } from "../../middlewares/authMiddleware.js";
+import {emailVerificationHandler} from "../../helpers/emailHelper.js"
 // Router Object
 const router = express.Router();
 
