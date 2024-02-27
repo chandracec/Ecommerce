@@ -9,7 +9,7 @@ import productRoutes from "./routes/productRoutes.js";
 import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
-import cookieParser from 'cookie-parser'
+import cookieParser from 'cookie-parser';
 
 // Config .env
 dotenv.config();
@@ -25,10 +25,7 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 // Middlewares
-app.use(cors({ 
-  origin: 'http://localhost:5173', // Allow requests from this origin
-  credentials: true // Allow credentials (cookies)
-}));
+app.use(cors()); // Allow requests from any origin
 app.use(express.json());
 app.use(cookieParser());
 app.use(morgan("dev"));
